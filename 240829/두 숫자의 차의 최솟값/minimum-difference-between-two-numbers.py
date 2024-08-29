@@ -1,11 +1,6 @@
 N = int(input())
-str_arr = input()
-
-arr = []
-for i in range(N):
-    arr.append(int(str_arr.split(" ")[i]))
-
-#print(arr)
+arr =   list(map(int,input().split()))
+ 
 
 min_ = 200
 for i in range(1,5):
