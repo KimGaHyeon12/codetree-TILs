@@ -1,2 +1,2 @@
 a,b,c=1, 2, 'C'
-print(a,'->',b,'->',c)
+input_txt=(f'{a}->{b}->{c}' )
