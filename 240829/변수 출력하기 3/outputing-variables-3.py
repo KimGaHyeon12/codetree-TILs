@@ -1,2 +1,3 @@
-a,b,c=1, 2, 'C'
-input_txt=(f'{a}->{b}->{c}' )
+a, b, c = 1, 2, 'C'
+output_text = f'{a}->{b}->{c}'
+print(output_text)
