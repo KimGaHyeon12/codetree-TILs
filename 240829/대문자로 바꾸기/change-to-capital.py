@@ -11,9 +11,5 @@ for item  in arr:
         u = i.upper()
         temp.append(u)
     new_arr.append(temp)
-
-for item  in new_arr:
- 
-    for i in item:
-        print(i,' ',end = '')
-    print()
+for item in new_arr:
+    print(' '.join(item))  # Join each item in the row with a single space
