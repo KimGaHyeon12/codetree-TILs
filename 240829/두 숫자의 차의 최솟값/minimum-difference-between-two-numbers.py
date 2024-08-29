@@ -1,11 +1,12 @@
-N = int(input())
-arr =   list(map(int,input().split()))
- 
+n = int(input())
+arr = list(map(int, input().split()))
 
-min_ = 200
-for i in range(1,N):
-        cha = arr[i] - arr[i-1]
-        if cha>0 and cha<min_:
-            min_=cha
+min_diff = 200  # Setting it to a value higher than the maximum possible difference
 
-print(min_)
+# Iterate through the list to find the minimum difference between consecutive elements
+for i in range(1, n):
+    cha = arr[i] - arr[i - 1]
+    if cha < min_diff:
+        min_diff = cha
+
+print(min_diff)
