@@ -12,4 +12,8 @@ for item  in arr:
         temp.append(u)
     new_arr.append(temp)
 
-print(new_arr)
+for item  in new_arr:
+ 
+    for i in item:
+        print(i,' ',end = '')
+    print()
