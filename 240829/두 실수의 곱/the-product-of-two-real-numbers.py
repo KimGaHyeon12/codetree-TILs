@@ -1,3 +1,2 @@
-a, b = 5.26, 8.27 
-num =  a* b 
-print(round(num, 2))
+a, b = 5.26, 8.27
+print("%0.3f" % (a*b))
