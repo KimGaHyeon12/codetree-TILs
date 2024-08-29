@@ -4,5 +4,5 @@ Total days in Year
 Circumference rate
 3.1415926535"""
 
-input_txt= """
-print()
+ 
+print(input_txt )
