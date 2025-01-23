@@ -1,6 +1,6 @@
 Y, M, D = map(int, input().split())
-answer = -1 
-m_days = [0,31,30,31,30,31,30,31,31,30,31,30,31,30,31,30]
+  
+m_days = [0,31,28,31,30,31,30,31,31,30,31,30,31,30,31,30]
 # Write your code here!
 #어떤 계절인지.
 def season(M):
@@ -23,11 +23,21 @@ def yun(Y):
     else:
         return False
 
-if D > m_days[M]:
+answer = season(M)
+if M!=2 and D > m_days[M]:
     answer = -1
-elif M==2 and yun(Y)==True and D > 29:
-    answer = -1
+elif M==2 and yun(Y)==True:
+    if D <= 29:
+        answer = season(M)
+    else:     
+        answer = -1
+elif M==2 and yun(Y)==False:
+    if D <= 28:
+        answer = season(M)
+    else:     
+        answer = -1
 else:
    answer = season(M)
     
 print(answer)
+#print(yun(Y))
