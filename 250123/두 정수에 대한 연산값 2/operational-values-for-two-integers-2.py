@@ -8,4 +8,4 @@ small =  min(a,b)
 small +=10
 big = big *2
 
-print(small,bif)
+print(small,big)
