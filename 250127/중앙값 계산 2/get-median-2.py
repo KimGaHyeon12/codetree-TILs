@@ -11,6 +11,7 @@ for i in range(1,n+1):
         #print(i, new_arr)
         answers.append(new_arr[i//2])
 
-
-print(answers )
+for a in answers:
+    print(a,'',end='' )
+#print(answers )
 
