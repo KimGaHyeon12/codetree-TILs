@@ -9,15 +9,18 @@ elapsed_days = 0
 num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 answers = ["Sun", "Mon", "Wed", "thu", "Fri", "Sat"]
 
-while True:
-    if month == m2 and day == d1:
-        break
+if m1== m2 and d1== d2:
+    print("Mon")
+else:
+    while True:
+        if month == m2 and day == d1:
+            break
 
-    elapsed_days += 1
-    day += 1
+        elapsed_days += 1
+        day += 1
 
-    if day > num_of_days[month]:
-        month += 1
-        day = 1
+        if day > num_of_days[month]:
+            month += 1
+            day = 1
 
-print(answers[elapsed_days%7])
+    print(answers[elapsed_days%7])
