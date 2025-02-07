@@ -19,8 +19,9 @@ while True:
         day += 1
         hour = 0
 
-
-if elapsed_time <= 0:
+if a==11 and b==11 and c==11:
+    print(0)
+elif elapsed_time <= 0:
     print(-1)
 else:
     print(elapsed_time)
