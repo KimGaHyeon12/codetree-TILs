@@ -34,7 +34,7 @@ answer = diff//7
 day_of_week = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 #print(day_of_week[diff % 7])
 #print(day_of_week .index("Sat"))
-if (diff%7) <= (day_of_week.index(A)):
+if (diff%7) < (day_of_week.index(A)):
     answer +=1
 print(answer)
 
