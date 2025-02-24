@@ -10,14 +10,10 @@ for seg in segments:
     for i in range(start,end):
         arr[i] = arr[i] + 1
     #print(seg)
-    #print(arr[100:])
-count = 0
-for a in arr:
-    if a > 1:
-        count +=1
+    #print(arr[:100])
+    #print(arr[100:])   
 
-print(   count+1)
-
+print(max(arr))
 #print("count", count)
 #print(arr[:100])
 #print(arr[100:])
