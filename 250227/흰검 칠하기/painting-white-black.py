@@ -8,7 +8,7 @@ for num, direction in commands:
 
 # Please write your code here.
 # Please write your code here.
-answer_arr  = [0""] * 202
+answer_arr  = [""] * 202
 current = 0
 
 for i in range(n):
