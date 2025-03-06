@@ -28,9 +28,20 @@ for t in range(n):
             current = current + x[t]
 
     else: #"L"
-        for i in range(current - x[t], current): 
-            answer[i] ="W"
-        current = current - x[t]
+        if current - x[t] >0:
+            for i in range(current - x[t], current): 
+                answer[i] ="W"
+            current = current - x[t]
+
+        else: 
+            for i in range( current): 
+                answer[i] ="W"
+            for i in range( current - x[t],0): 
+                answer[i] ="W"
+                if current-i < 0:
+                    break
+            current = current - x[t]
+
 
 #print(answer)
 for a in answer:
