@@ -9,14 +9,23 @@ for num, direction in commands:
 # Please write your code here.
 count_B = 0
 count_W = 0
-answer = ["" for _ in range(101)]
+answer = ["" for _ in range(100)]
 current = 0
 
 for t in range(n):
     if dir[t] =="R":
-        for i in range(current,current + x[t]): 
-            answer[i] ="B"
-        current = current + x[t]
+        if current + x[t] <100:
+            for i in range(current,current + x[t]): 
+                answer[i] ="B"
+            current = current + x[t]
+        else:
+            for i in range(current,current + x[t]): 
+                answer[i] ="B"
+                if current+i>1:
+                    break
+            for i in range(current + x[t] -100):
+                 answer[i] ="B"
+            current = current + x[t]
 
     else: #"L"
         for i in range(current - x[t], current): 
