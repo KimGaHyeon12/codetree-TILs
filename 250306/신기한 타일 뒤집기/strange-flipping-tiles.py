@@ -1,0 +1,35 @@
+n = int(input())
+commands = [tuple(input().split()) for _ in range(n)]
+x = []
+dir = []
+for num, direction in commands:
+    x.append(int(num))
+    dir.append(direction)
+
+# Please write your code here.
+count_B = 0
+count_W = 0
+answer = ["" for _ in range(101)]
+current = 0
+
+for t in range(n):
+    if dir[t] =="R":
+        for i in range(current,current + x[t]): 
+            answer[i] ="B"
+        current = current + x[t]
+
+    else: #"L"
+        for i in range(current - x[t], current): 
+            answer[i] ="W"
+        current = current - x[t]
+
+#print(answer)
+for a in answer:
+    if a =="B":
+        count_B +=1
+    elif a =="W":
+        count_W +=1
+ 
+print(count_W, count_B)
+
+
