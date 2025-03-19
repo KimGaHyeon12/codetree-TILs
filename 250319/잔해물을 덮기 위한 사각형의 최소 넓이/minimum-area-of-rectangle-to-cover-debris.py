@@ -27,6 +27,8 @@ if not x_arr or not y_arr:
 else:
     x_len = max(x_arr) - min(x_arr)  + 1
     y_len = max(y_arr) - min(y_arr) + 1
+    answer = x_len * y_len
+    print(answer)
 
 #print(x_arr)
 #print(y_arr)
@@ -34,5 +36,3 @@ else:
 #print(max(x_arr),  min(x_arr)  , x_len)
 #print(max(y_arr),  min(y_arr)  , y_len)
 
-answer = x_len * y_len
-print(answer)
