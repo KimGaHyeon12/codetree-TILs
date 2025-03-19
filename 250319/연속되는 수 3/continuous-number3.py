@@ -6,7 +6,7 @@ arr = [int(input()) for _ in range(N)]
 cnt = 0
 
 for i in range(N):
-    if i==0 or arr[i] * arr[i - 1] < 0:
+    if i==0 or arr[i] * arr[i - 1] > 0:
         cnt+=1
 
 print(cnt+1)
