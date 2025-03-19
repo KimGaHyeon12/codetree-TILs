@@ -9,4 +9,4 @@ for i in range(N):
     if i==0 or arr[i] * arr[i - 1] > 0:
         cnt+=1
 
-print(cnt+1)
+print(cnt )
