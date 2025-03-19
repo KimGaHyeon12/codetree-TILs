@@ -22,9 +22,11 @@ for i in range(2001):
             x_arr.append(i)
             y_arr.append(j)
 
-
-x_len = max(x_arr) - min(x_arr)  + 1
-y_len = max(y_arr) - min(y_arr) + 1
+if not x_arr or not y_arr:
+    print(0)
+else:
+    x_len = max(x_arr) - min(x_arr)  + 1
+    y_len = max(y_arr) - min(y_arr) + 1
 
 #print(x_arr)
 #print(y_arr)
