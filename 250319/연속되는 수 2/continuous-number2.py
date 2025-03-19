@@ -11,5 +11,7 @@ for i in range(n):
         cnt_arr.append(cnt)
         cnt=0
 
-
-print(max(cnt_arr)+1)
+if not cnt_arr:
+    print(1)
+else:
+    print(max(cnt_arr)+1)
